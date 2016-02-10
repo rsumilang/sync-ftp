@@ -19,7 +19,7 @@ PASS="secretpass"
 DELETE=1
 
 # Additional commands
-# Here you can add a few more commands to execute. For exmaple:
+# Here you can add a few more commands to execute. For example:
 #
 #   put config/environments/$1.php -o protected/config/environments/current.php
 #   put config/apache/htaccess-$1 -o .htaccess

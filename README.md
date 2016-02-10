@@ -16,22 +16,17 @@ be needed for this to work in which case you can run `brew update`.
 Usage:
 -------------------------------
 ```bash
-./sync-ftp.sh {config-file} {source-path} {deploy-path}
+./sync-ftp.sh config-file.sh source-path deploy-path
 ```
 
 **Example:**
 ```bash
-./sync-ftp.sh config-example /path/to/source /deploy/path
+./sync-ftp.sh config/environment.sh /source/path /deploy/path
 ```
 
-The config-file in this case, *config-example*, must be located in
-*config/config-example.sh*. Please take a look at the example for available
-options.
+*Note:* See `config` directory for example.
 
 The script will ignore *.DS_Store* and local files in the uploads directory when
 deploying.
-
-Deploying to another environment means adding another config file to *config/*.
-
 
 Author: Richard Sumilang <me@richardsumilang.com>

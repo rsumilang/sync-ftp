@@ -16,20 +16,7 @@
 #
 # Usage:
 # -------------------------------
-# ./sync-ftp.sh {config-file} {source-path} {deploy-path}
-#
-# Example:
-# 	./sync-ftp.sh config-example /path/to/source /deploy/path
-#
-# The config-file in this case, "config-example", must be located in
-# config/config-example.sh. Please take a look at the example for available
-# options.
-#
-# The script will ignore .DS_Store and local files in the uploads directory when
-# deploying.
-#
-# Deploying to another environment means adding another config file to config/.
-#
+# See README.md
 #
 # Author: Richard Sumilang <me@richardsumilang.com>
 # Date: April 17th, 2013
@@ -51,16 +38,16 @@ DEPLOY_PATH=$3
 
 if [ -z $1 ]
 then
-	echo $"Usage: $0 {config-file} {site|frameworks|all} [--force]"
+	echo $"Usage: $0 config-file.sh source-path deploy-path"
 	exit 1
 fi
 
-CONFIG="config/$1.sh"
+CONFIG="$1"
 if [ -e $CONFIG ]
 then
 	source $CONFIG
 else
-	echo "Error: Configuration not valid. Please check in config/*"
+	echo "Error: Configuration not valid. Please check path."
 	exit 2
 fi
 
