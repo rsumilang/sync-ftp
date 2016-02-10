@@ -16,12 +16,12 @@ be needed for this to work in which case you can run `brew update`.
 Usage:
 -------------------------------
 ```bash
-./sync-ftp.sh config-file.sh source-path deploy-path
+./sync-ftp.sh config-file.sh source-path deploy-path [protocol]
 ```
 
 **Example:**
 ```bash
-./sync-ftp.sh config/environment.sh /source/path /deploy/path
+./sync-ftp.sh config/environment.sh /source/path /deploy/path sftp
 ```
 
 *Note:* See `config` directory for example.
