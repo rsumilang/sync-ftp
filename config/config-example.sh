@@ -18,6 +18,10 @@ PASS="secretpass"
 # If set to 1 then we will delete files from host that no longer exist in source
 DELETE=1
 
+# Additional Mirror Options
+# IE: --exclude foo/bar
+MIRROR_OPTIONS=""
+
 # Additional commands
 # Here you can add a few more commands to execute. For example:
 #

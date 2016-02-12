@@ -90,7 +90,7 @@ lcd $SOURCE_PATH;
 cd $DEPLOY_PATH;
 mirror --reverse $DELETE_ARG \
 			 --verbose \
-			 --exclude-glob .DS_Store
+			 --exclude-glob .DS_Store $MIRROR_OPTIONS
 $ADD_CMDS
 bye
 "
